@@ -1,0 +1,106 @@
+.container{
+    display: grid;
+    grid-template-columns: 250px minmax(600px, 2fr);
+    grid-auto-rows: auto;
+    min-height: 100vh;
+    grid-template-areas:
+    "sidebar header"
+    "sidebar content"
+    "sidebar content"
+    "sidebar footer";
+    font-family:  "Arimo", sans-serif;
+}
+
+
+.container header{
+    background: whitesmoke;
+    grid-area: header;
+    padding-left:100px;
+    padding-top: 50px;
+    color: #186480;
+    font-family: "Roboto Mono";
+    font-optical-sizing: auto;
+    font-weight:800;
+    font-style:italic;
+}
+
+
+.container aside{
+    background: #2596be;
+    grid-area: sidebar;
+    color: rgb(3, 26, 87);
+    background-image: url(sidephoto.jpg);
+}
+
+
+.container main{
+    background: whitesmoke;
+    grid-area: content;
+}
+
+
+.container footer{
+    background: whitesmoke;
+    grid-area: footer;
+}
+
+
+body{
+    margin: 0;
+    border-radius: 30px;
+}
+
+aside a{
+    font-size: 13px;
+}
+
+.foto-perfil img{
+    margin-top: 30px;
+    width: 200px;
+    border-radius: 100px;
+}
+
+
+.parrafo{
+    width: 600px;
+    text-align: justify;
+    padding-left: 30px;
+}
+
+.listas p{
+    padding: 0;
+    margin: 0;
+}
+
+aside section{
+    margin-left: 20px;
+}
+
+.parrafo h2{
+    border-bottom: 1px solid #186480;
+}
+
+aside h2{
+    width: 200px;
+    border-bottom: 1px solid whitesmoke;
+}
+
+aside section{
+    margin-bottom: 50px;
+}
+
+footer a{
+    margin-right: 100px;
+}
+
+footer{
+    padding-bottom: 30px;
+}
+
+aside ul{
+    padding-left: 17px;
+}
+
+.listas{
+    padding-left: 20px;
+}
